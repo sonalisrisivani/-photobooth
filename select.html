@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Select Collage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #f7f8fa, #e3e4e8); /* Soft pastel gradient */
+      font-family: 'Playfair Display', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 100;
+      color: #2c2c2c;
+      margin-bottom: 60px;
+      letter-spacing: 1px;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    .stack {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 3rem; /* Increased gap between cards */
+      width: 90%;
+      max-width: 1300px;
+      margin-top: 60px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      border: 3px solid #2c2c2c; /* Slightly thicker border for more elegance */
+      border-radius: 25px; /* More rounded corners for a soft feel */
+      overflow: hidden;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease;
+      text-align: center;
+      padding: 35px; /* More padding inside each card */
+      cursor: pointer;
+      margin: 0 20px; /* Added horizontal margin for spacing */
+    }
+
+    .card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.2);
+    }
+
+    .image {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      background-color: #f1f1f1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      color: #7a3d56;
+      margin-bottom: 25px;
+      border-radius: 15px;
+      border: 1px solid #f1f1f1;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    b {
+      font-size: 1.5rem; /* Larger text for a more sophisticated look */
+      color: #2c2c2c;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Select Your Collage</h1>
+
+    <div class="stack">
+      <a href="photo.html?rows=3&&cols=2">
+        <div class="card">
+          <div class="image">Collage Preview</div>
+          <b>3 x 2 Classic Collage</b>
+        </div>
+      </a>
+
+      <a href="photo.html?rows=2&&cols=2">
+        <div class="card">
+          <div class="image">Collage Preview</div>
+          <b>2 x 2 Classic Collage</b>
+        </div>
+      </a>
+
+      <a href="photo.html?rows=3&&cols=1">
+        <div class="card">
+          <div class="image">Collage Preview</div>
+          <b>3 x 1 Classic Collage</b>
+        </div>
+      </a>
+
+      <a href="photo.html?rows=1&&cols=2">
+        <div class="card">
+          <div class="image">Collage Preview</div>
+          <b>1 x 2 Classic Collage</b>
+        </div>
+      </a>
+
+      <a href="photo.html?rows=1&&cols=1">
+        <div class="card">
+          <div class="image">Collage Preview</div>
+          <b>1 x 1 Classic Collage</b>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
